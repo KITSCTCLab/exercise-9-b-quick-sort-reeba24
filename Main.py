@@ -7,7 +7,7 @@ def sorting(data,low,high):
     for j in range(low,high):
         if data[j] <= pivot:
             i+=1
-            data[j],data[j] = data[j],data[i]
+            data[i],data[j] = data[j],data[i]
     data[i+1],data[high] = data[high],data[i+1]
     return i+1
 
